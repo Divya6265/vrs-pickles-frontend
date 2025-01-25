@@ -1,11 +1,8 @@
 import React from 'react'
 import Card from '../Components/Card'
 import Header from './Header';
-// import { useLocation } from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
 function Category({name, cat, products}) {
-    // const location = useLocation();
-    // const searchParams= new URLSearchParams(location.search);
 
     const [searchParams] = useSearchParams();
     if(searchParams.size>0)

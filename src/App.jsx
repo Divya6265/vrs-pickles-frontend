@@ -11,7 +11,7 @@ function App() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-     axios.get("http://127.0.0.1:8000/")
+     axios.get("https://vrs-pickles-backend.onrender.com/")
     .then(response => {
       setProducts(response.data);
     }).catch(err => {

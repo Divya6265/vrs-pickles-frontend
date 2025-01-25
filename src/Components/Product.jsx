@@ -10,7 +10,7 @@ function Product() {
     const [product, setProduct] = useState({});
     const [imageUrl, setImgeUrl] = useState("");
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/products/"+paarams.id)
+        axios.get("https://vrs-pickles-backend.onrender.com/products/"+paarams.id)
             .then(response => {
                 console.log(response.data, "res");
                 setProduct(response.data);
@@ -22,7 +22,7 @@ function Product() {
     console.log(product)
     useEffect(() => {
         if(product.images?.[0]){
-            setImgeUrl("http://127.0.0.1:8000" + product.images[0])
+            setImgeUrl("https://vrs-pickles-backend.onrender.com" + product.images[0])
         }
     },[product]);
 
