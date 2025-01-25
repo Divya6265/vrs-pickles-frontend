@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Lato:wght@400;700&family=Poppins&display=swap');
+
+
+body{
+    // background-color: #82b802;
+    // background-color: #944105;
+    background-color: #61342B;
+}
+
+.header .carousel-inner {
+    background-color: #4d2203;
+
+    .carousel-item {
+        padding-top: 10px;
+        text-align: center;
+
+        p {
+            font-family: "Akaya Telivigala", serif;
+            color: #fff;
+        }
+    }
+}
+
+.sub__header{
+    background-color: #4d2203;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    .bars_ {
+        display: none;
+    }
+
+    .close__icon {
+        display: none;
+    }
+
+    .sidebar__menu {
+        margin: 10px auto auto 40px;
+        display: inline;
+        z-index: 999;
+        .sidebar__ {
+            li {
+                color: #fff;
+                list-style-type: none;
+                display: inline;
+                margin: auto 15px;
+                font-size: 13px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            .sidebar__item{
+                text-decoration: none;
+            }
+        }
+
+
+    }
+
+    .logo {
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+        text-align: center;
+
+        .logo__img {
+            border-radius: 50%;
+            width: 50px;
+
+        }
+    }
+    p{
+        display: flex;
+        font-size: 1em;
+        color: #fff;
+        margin: 20px  20px 0 0 ;
+    }
+
+    .search__icon {
+        font-size: 25px;
+        margin: 10px 20px;
+        z-index: 5;
+        color: #fff;
+    }
+}
+
+.search__product {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    padding: 10px;
+    .search_wrapper {
+        position: relative;
+        width: fit-content;
+
+        #product {
+            font-size: 20px;
+            letter-spacing: 1px;
+            width: 600px;
+            padding: 6px 40px;
+            border-radius: 25px;
+            border: #1D2E28 solid 1.5px;
+        }
+
+        #product:focus {
+            outline: none;
+        }
+
+        .innersearch__icon {
+            position: absolute;
+            top: 10px;
+            margin-left: 15px;
+            z-index: 5;
+            font-size: 20px;
+
+        }
+
+        .removesearch__icon {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            z-index: 5;
+            font-size: 20px;
+
+        }
+    }
+
+}
+
+.search_results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width : 1423px) {
+    .sub__header {
+        padding-bottom: 0;
+       
+        margin-top: 0;
+        .bars_,
+        .close__icon {
+            z-index: 10;
+            width: min-content;
+            font-size: 30px;
+            display: block;
+            margin: 10px 20px;
+            color: #fff;
+        }
+
+        .sidebar__menu.hidden {
+            display: none;
+        }
+
+        .sidebar__menu.visible {
+            z-index: 999;
+            position: absolute;
+            top: 0;
+            margin: 0;
+            width: 80%;
+            height: 100vh;
+            background-color: #fff;
+            display: block;
+
+            .sidebar__ {
+                a:hover{
+                    text-decoration: none;
+                }
+                li {
+                    display: block;
+                    list-style-type: none;
+                    margin: 25px;
+                }
+            }
+
+        }
+        p{
+            width: 100px;
+            margin-top: 0;
+        }
+
+    }
+
+    .search__product {
+        .search_wrapper {
+            width: 100%;
+
+            #product {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .products__content .product__item {
+        box-shadow: none;
+    }
+}
