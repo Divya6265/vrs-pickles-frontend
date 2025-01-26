@@ -71,7 +71,7 @@ function Header() {
         <div className="logo">
           <img src={logo} alt="not found" className='logo__img' />
         </div>
-        <p> <span>Order Now</span> 9290066555</p>
+        <p> <span>Order Now </span> 9290066555</p>
         {/* <div className="search__icon"> <IoSearch onClick={handleShowSearch} /> </div> */}
         {/* {showSearchForm ?
                     <form className='search__product'>
