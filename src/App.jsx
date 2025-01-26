@@ -11,7 +11,7 @@ function App() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-     axios.get("https://vrs-pickles-backend.onrender.com/")
+     axios.get("https://vrs-pickles-backend.onrender.com")
     .then(response => {
       setProducts(response.data);
     }).catch(err => {
